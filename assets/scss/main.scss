@@ -3,14 +3,14 @@
 @import "footer.scss";
 
 // General partials
-@import "partials/variables";
-@import "partials/typography";
-@import "partials/figures";
-@import "partials/menu";
-@import "partials/flaticon";
-@import "partials/work-cards";
-@import "partials/work-post";
-@import "partials/layout";
-@import "partials/animations";
-@import "partials/bio";
-@import "partials/subscribe";
+@import "components/variables";
+@import "components/typography";
+@import "components/figures";
+@import "components/menu";
+@import "components/flaticon";
+@import "components/work-cards";
+@import "components/work-post";
+@import "components/layout";
+@import "components/animations";
+@import "components/bio";
+@import "components/subscribe";
