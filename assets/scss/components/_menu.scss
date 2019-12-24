@@ -23,7 +23,7 @@
     position: absolute;
     top: 0;
     z-index: 10;
-    @media screen and (min-width:$mobile){
+    @media screen and (max-width: $mobile){
         height: 100vh;
         width: 100vw;
         align-items: center;  
@@ -60,7 +60,7 @@
             }
         left: 0;
         position: fixed;
-        @media screen and (min-width:$mobile){
+        @media screen and (max-width:$mobile){
                 -webkit-animation: slideIn .3s ease-out;
                 -moz-animation: slideIn .3s ease-out; 
                 left: 0;
@@ -81,7 +81,7 @@
                 }
             left: -20%;
             position: fixed;
-                 @media screen and (min-width:$mobile){
+                 @media screen and (max-width:$mobile){
                     -webkit-animation: slideIn .3s ease-out;
                     -moz-animation: slideIn .3s ease-out; 
                     left: 0;
@@ -91,10 +91,10 @@
 
     &__logo{
         img{
-             @media screen and (min-width:$desktop-sm){
+             @media screen and (max-width:$desktop-sm){
                 width: 90%;
             }
-             @media screen and (min-width:$mobile){
+             @media screen and (max-width:$mobile){
                 display: none; 
             }
         }
@@ -128,20 +128,20 @@
                     height: 50%;
                 }
             }
-             @media screen and (min-width:$desktop-sm){
+             @media screen and (max-width:$desktop-sm){
                 font-size: var(--font-small);
             }
-             @media screen and (min-width:$mobile){
+             @media screen and (max-width:$mobile){
                 font-size: 2.8rem;
             }
             &.--selected{
                 font-size: var(--font-big);
                 font-weight: 400;
                 position: relative;
-                     @media screen and (min-width:$desktop-sm){
+                     @media screen and (max-width:$desktop-sm){
                         font-size: var(--font-small);
                     }
-                     @media screen and (min-width:$mobile){
+                     @media screen and (max-width:$mobile){
                         font-size: 2.8rem;
                     }
                 &::before{
@@ -154,13 +154,13 @@
                     position: absolute;
                     top: 8px;
                     left: -20px;
-                         @media screen and (min-width:$desktop-sm){
+                         @media screen and (max-width:$desktop-sm){
                             height: 7px;
                             width: 7px;
                             top: 7px;
                             left: -15px;
                         }
-                         @media screen and (min-width:$mobile){
+                         @media screen and (max-width:$mobile){
                             height: 15px;
                             width: 15px;
                             top: 18px;
@@ -171,7 +171,7 @@
     }
 
     &__social-items{
-         @media screen and (min-width:$mobile){
+         @media screen and (max-width:$mobile){
             display: flex; 
             justify-content: center;
             align-items: center;
@@ -181,7 +181,7 @@
 
     &__social-item{
         letter-spacing: 1.68px;
-             @media screen and (min-width:$desktop-sm){
+             @media screen and (max-width:$desktop-sm){
                 font-size: 0.7em;
             }
         &:not(:last-child){
@@ -189,12 +189,12 @@
         }
         i{
             margin-right: 0.3em;
-                 @media screen and (min-width:$mobile){
+                 @media screen and (max-width:$mobile){
                     font-size: 3em;
                 } 
         }
         span{
-                 @media screen and (min-width:$mobile){
+                 @media screen and (max-width:$mobile){
                     display: none; 
                 }  
         }
@@ -202,10 +202,10 @@
 
     &__mail{
         letter-spacing: 1.1px;
-             @media screen and (min-width:$desktop-sm){
+             @media screen and (max-width:$desktop-sm){
                 font-size: 0.6em;
             }
-             @media screen and (min-width:$mobile){
+             @media screen and (max-width:$mobile){
                 font-size: 1.5em;
                 margin-top: 1em;
             }
@@ -227,7 +227,7 @@
             #{$self}--hide &{
                 display: flex;
                 transition: .3s;
-                 @media screen and (min-width:$mobile){
+                 @media screen and (max-width:$mobile){
                     display: none;
                 }
             }
@@ -235,7 +235,7 @@
                 display: flex;
                 transform: rotate(-180deg);
                 transition: .3s;
-                 @media screen and (min-width:$mobile){
+                 @media screen and (max-width:$mobile){
                     display: none;
                 }
             }
@@ -251,7 +251,7 @@
     position: absolute;
     top: 40px;
     left: 20px;
-     @media screen and (min-width:$mobile){
+     @media screen and (max-width:$mobile){
         display: block; 
         
     }

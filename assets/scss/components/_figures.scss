@@ -4,7 +4,7 @@
         margin: 0 auto;
         display: none;
         margin-top: 60px;
-        @media screen and (min-width:$mobile){
+        @media screen and (max-width:$mobile){
             display: block; 
              }
     }
