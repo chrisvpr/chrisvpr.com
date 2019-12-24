@@ -1,3 +1,16 @@
 @import "global.scss";
 @import "header.scss";
 @import "footer.scss";
+
+// General partials
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/figures";
+@import "partials/menu";
+@import "partials/flaticon";
+@import "partials/work-cards";
+@import "partials/work-post";
+@import "partials/layout";
+@import "partials/animations";
+@import "partials/bio";
+@import "partials/subscribe";

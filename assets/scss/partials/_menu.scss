@@ -1,0 +1,312 @@
+.menu{
+    $self: &;
+    background-color: var(--gray);
+    height: 100vh;
+    width: 15%; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+            align-items: flex-start;
+    color: white;
+    font-size: var(--font-small);
+    font-weight: 100;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    @media screen and (min-width:$mobile){
+        height: 100vh;
+        width: 100vw;
+        align-items: center;  
+        justify-content: center;
+        display: none;
+        overflow: hidden;
+        padding: 0;
+        -webkit-animation: slideIn .3s ease-out;
+        -moz-animation: slideIn .3s ease-out;
+            @-webkit-keyframes slideIn {
+                0% { opacity: 0; -webkit-transform: translateX(-150vw); }   
+                100% { opacity: 1; -webkit-transform: translateX(0); }
+            }
+            @-moz-keyframes slideIn {
+                0% { opacity: 0; -moz-transform: translateX(-150vw); }   
+                100% { opacity: 1; -moz-transform: translateX(0); }
+            }  
+        }
+        &--show-mobile{
+            display: -webkit-box; display: -ms-flexbox; display: flex;
+        }
+
+        &--show{
+            height: 100%;
+            -webkit-animation: open-menu .3s ease-out;
+            -moz-animation: open-menu .3s ease-out;
+            @-webkit-keyframes open-menu {
+                0% { left: -20%}   
+                100% {left: 0; }
+            }
+            @-moz-keyframes open-menu {
+                0% { left: -20%}   
+                100% {left: 0; }
+            }
+        left: 0;
+        position: fixed;
+        @media screen and (min-width:$mobile){
+                -webkit-animation: slideIn .3s ease-out;
+                -moz-animation: slideIn .3s ease-out; 
+                left: 0;
+                position: absolute;
+            }
+        } 
+
+        &--hide{
+            -webkit-animation: Close .3s ease-out;
+            -moz-animation: Close .3s ease-out;
+                @-webkit-keyframes Close {
+                    0% { left: 0}   
+                    100% {left: -20%; }
+                }
+                @-moz-keyframes Close {
+                    0% { left: 0}   
+                    100% {left: -20%; }
+                }
+            left: -20%;
+            position: fixed;
+                 @media screen and (min-width:$mobile){
+                    -webkit-animation: slideIn .3s ease-out;
+                    -moz-animation: slideIn .3s ease-out; 
+                    left: 0;
+                    position: absolute;
+                }
+        }
+
+    &__logo{
+        img{
+             @media screen and (min-width:$desktop-sm){
+                width: 90%;
+            }
+             @media screen and (min-width:$mobile){
+                display: none; 
+            }
+        }
+    }
+        
+    &__item{
+        color: white;
+        font-size: var(--font-big);
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5em;
+        letter-spacing: initial;
+        position: relative;
+        
+        &::after{
+
+            display: block;
+            content: '';
+            background-color: var(--red);
+            width: 0%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            transition: all .3s ease-out;
+            
+        }
+            &:hover{    
+                &::after{
+                    width: 100%;
+                    height: 50%;
+                }
+            }
+             @media screen and (min-width:$desktop-sm){
+                font-size: var(--font-small);
+            }
+             @media screen and (min-width:$mobile){
+                font-size: 2.8rem;
+            }
+            &.--selected{
+                font-size: var(--font-big);
+                font-weight: 400;
+                position: relative;
+                     @media screen and (min-width:$desktop-sm){
+                        font-size: var(--font-small);
+                    }
+                     @media screen and (min-width:$mobile){
+                        font-size: 2.8rem;
+                    }
+                &::before{
+                    content:"";
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: var(--red);
+                    position: absolute;
+                    top: 8px;
+                    left: -20px;
+                         @media screen and (min-width:$desktop-sm){
+                            height: 7px;
+                            width: 7px;
+                            top: 7px;
+                            left: -15px;
+                        }
+                         @media screen and (min-width:$mobile){
+                            height: 15px;
+                            width: 15px;
+                            top: 18px;
+                            left: -20px;
+                        }
+                }
+            }
+    }
+
+    &__social-items{
+         @media screen and (min-width:$mobile){
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin-top: 70px;
+        } 
+    }
+
+    &__social-item{
+        letter-spacing: 1.68px;
+             @media screen and (min-width:$desktop-sm){
+                font-size: 0.7em;
+            }
+        &:not(:last-child){
+            margin-right: 0.8em;
+        }
+        i{
+            margin-right: 0.3em;
+                 @media screen and (min-width:$mobile){
+                    font-size: 3em;
+                } 
+        }
+        span{
+                 @media screen and (min-width:$mobile){
+                    display: none; 
+                }  
+        }
+    }   
+
+    &__mail{
+        letter-spacing: 1.1px;
+             @media screen and (min-width:$desktop-sm){
+                font-size: 0.6em;
+            }
+             @media screen and (min-width:$mobile){
+                font-size: 1.5em;
+                margin-top: 1em;
+            }
+    }
+
+    &__mail-dot{
+        color: var(--red);
+        font-weight: 700;
+        margin-left: -8px;
+    }
+
+    &__open-arrow{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 2em;
+        right: 8%;
+            #{$self}--hide &{
+                display: flex;
+                transition: .3s;
+                 @media screen and (min-width:$mobile){
+                    display: none;
+                }
+            }
+            #{$self}--show &{
+                display: flex;
+                transform: rotate(-180deg);
+                transition: .3s;
+                 @media screen and (min-width:$mobile){
+                    display: none;
+                }
+            }
+    }
+}
+
+// Importing Mobile Menu Icon...
+#toggle {
+    
+    display: none;
+    width: 28px;
+    height: 15px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+     @media screen and (min-width:$mobile){
+        display: block; 
+        
+    }
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: block;
+  }
+  
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 0.8px;
+    background-color: var(--gray);
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+    z-index: 15;
+  }
+
+  #toggle .--white,
+  #toggle .--white:after,
+  #toggle .--white:before {
+    background-color: white;
+  }
+
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+    background-color: white;
+   
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+    background-color: white;
+  }
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+

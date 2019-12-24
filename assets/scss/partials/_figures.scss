@@ -1,0 +1,41 @@
+//Generals
+.main-logo{
+    &--sm{
+        margin: 0 auto;
+        display: none;
+        margin-top: 60px;
+        @media screen and (min-width:$mobile){
+            display: block; 
+             }
+    }
+}
+//helpers
+.no-scroll{
+    overflow: hidden;
+}
+.h-highlight{
+    background-color: var(--red);
+    color: white;
+}
+.h-red{
+    color: var(--red);
+}
+
+.h-error{    
+    text-align: center;
+    margin: 20% auto 1em auto;
+    padding: 0 5%;
+    color: var(--gray);
+    font-size: 5rem;
+}
+
+.h-red-dot{
+    background-color: var(--red);
+    --size: 0.8em;
+    width: var(--size);
+    height: var(--size);
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 0.1em;
+
+}
