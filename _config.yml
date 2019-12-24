@@ -1,0 +1,22 @@
+title: Design Template
+baseurl: ""
+
+markdown: kramdown
+
+exclude:
+  - node_modules
+  - assets
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - README.md
+  - webpack.config.js
+  - setup
+
+include:
+  - _pages
+
+keep_files:
+  - assets
