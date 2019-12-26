@@ -25,7 +25,7 @@ const autoprefixer = require("autoprefixer");
 
 function browserSync(done) {
   browsersync.init({
-    server: {baseDir: "./_site/"}
+    server: {baseDir: "./docs/"}
   });
   done();
 }
@@ -37,7 +37,7 @@ function browserSyncReload(done) {
 
 // Clean assets
 function clean() {
-  return del(["./_site/assets/css", "./_site/assets/fonts"]);
+  return del(["./docs/assets/css", "./docs/assets/fonts"]);
 }
 
 /*
@@ -48,7 +48,7 @@ function clean() {
 function images() {
   return gulp
     .src("./assets/images/**/*")
-    .pipe(newer("./_site/assets/images"))
+    .pipe(newer("./docs/assets/images"))
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
@@ -64,7 +64,7 @@ function images() {
         })
       ])
     )
-    .pipe(gulp.dest("./_site/assets/images"));
+    .pipe(gulp.dest("./docs/assets/images"));
 }
 
 // CSS task
@@ -75,7 +75,7 @@ function css() {
     .pipe(sass({ outputStyle: "expanded" }))
     .pipe(rename({ suffix: ".min" }))
     .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(gulp.dest("./_site/assets/css/"))
+    .pipe(gulp.dest("./docs/assets/css/"))
     .pipe(browsersync.stream());
 }
 
@@ -94,10 +94,10 @@ function scripts() {
   return (
     gulp
       .src(["./assets/js/**/*"])
-      .pipe(newer("./_site/assets/js"))
+      .pipe(newer("./docs/assets/js"))
       .pipe(babel({presets: ['@babel/preset-env']}))
       .pipe(minify({noSource: true, ext: {min: '.min.js'}}))
-      .pipe(gulp.dest("./_site/assets/js/"))
+      .pipe(gulp.dest("./docs/assets/js/"))
   );
 }
 

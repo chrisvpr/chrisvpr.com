@@ -1,6 +1,8 @@
 title: Design Template
 baseurl: ""
 
+destination: ./docs
+
 markdown: kramdown
 
 exclude:
