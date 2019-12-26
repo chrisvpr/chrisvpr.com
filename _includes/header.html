@@ -5,9 +5,21 @@
       </a>
       
       <nav class="menu__items">
+        {% if page.active == "work" %}
+        <a href="/" class="menu__item --selected">Work</a>
+        {% else %}
         <a href="/" class="menu__item">Work</a>
+        {% endif %}
+        {% if page.active == "about" %}
+        <a href="/about/" class="menu__item --selected">About</a>
+        {% else %}
         <a href="/about/" class="menu__item">About</a>
-        <a href="/keynotes/" class="menu__item">Keynotes</a> 
+        {% endif %}
+        {% if page.active == "keynotes" %}
+        <a href="/keynotes/" class="menu__item --selected">Keynotes</a>
+        {% else %}
+        <a href="/keynotes/" class="menu__item">Keynotes</a>
+        {% endif %} 
       </nav>
       
       <div class="menu__social">
