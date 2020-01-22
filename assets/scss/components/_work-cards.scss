@@ -105,15 +105,28 @@
           }
 
           &--workshop-02 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.63)), to(rgba(58, 58, 58, 0.43))),
-            url("/assets/images/workshop-2.jpg");
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.43)), to(rgba(58, 58, 58, 0.43))),
+            url("/assets/images/workshop-2--.jpg");
             background: -webkit-linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-2.jpg");
+            url("/assets/images/workshop-2--.jpg");
             background: -o-linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-2.jpg");
+            url("/assets/images/workshop-2--.jpg");
             background: linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-2.jpg");
+            url("/assets/images/workshop-2--.jpg");
             background-position: 50% 60%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          &--workshop-03 {
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.43)), to(rgba(58, 58, 58, 0.43))),
+            url("/assets/images/workshop-new.jpg");
+            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
+            url("/assets/images/workshop-new.jpg");
+            background: -o-linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
+            url("/assets/images/workshop-new.jpg");
+            background: linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
+            url("/assets/images/workshop-new.jpg");
+            background-position: 70% 60%;
             background-repeat: no-repeat;
             background-size: cover;
           }
