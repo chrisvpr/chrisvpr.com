@@ -164,6 +164,9 @@
         padding: 10px;
         font-size: 10px;
         border-radius: 5px;
+        @media screen and (max-width:$mobile){
+          display: none;
+          }
       }
       &__date {
         position: absolute;
