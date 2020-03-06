@@ -89,6 +89,19 @@
             background-repeat: no-repeat;
             background-size: cover;
           }
+          &--case-03 {
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.33)), to(rgba(58, 58, 58, 0.73))),
+            url("/assets/images/case-3.png");
+            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
+            url("/assets/images/case-3.png");
+            background: -o-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
+            url("/assets/images/case-3.png");
+            background: linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
+            url("/assets/images/case-3.png");
+            background-position: 62% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
 
           &--workshop-01 {
             background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.73)), to(rgba(58, 58, 58, 0.73))),
