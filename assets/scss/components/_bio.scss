@@ -104,4 +104,9 @@ position: relative;
 
 .bio-description__link{
 color: var(--red);
+&.--center{
+  text-align: center;
+    display: block;
+    margin: 20px 0;
+}
 }
