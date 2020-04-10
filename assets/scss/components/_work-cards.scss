@@ -102,6 +102,19 @@
             background-repeat: no-repeat;
             background-size: cover;
           }
+          &--case-04 {
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.33)), to(rgba(58, 58, 58, 0.73))),
+            url("/assets/images/case-4/case-4.jpg");
+            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
+            url("/assets/images/case-4/case-4.jpg");
+            background: -o-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
+            url("/assets/images/case-4/case-4.jpg");
+            background: linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
+            url("/assets/images/case-4/case-4.jpg");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
 
           &--workshop-01 {
             background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.73)), to(rgba(58, 58, 58, 0.73))),
