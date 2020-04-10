@@ -112,13 +112,41 @@ active: work
         to import new images if they connected their camera or SD card to the computer.</p>
     <p class="work-post-content__paragraph">
         We also put some hard work to have a higher RAW processing speed than our competitors. These were the results of
-        a snowball sampling control experiment, analyzing results using ANOVA.</p>
-    <picture>
-        <source srcset="/assets/images/case-4/case-4-speed-mb.png" version=1.0 media="(max-width: 800px)"
-            class="work-post-content__image-full--mobile">
-        <img data-src="/assets/images/case-4/case-4-speed-dk.png" version=1.0 class="work-post-content__image-full"
-            alt="Speed Test">
-    </picture>
+        a snowball sampling control experiment testing, analyzing results using ANOVA.</p>
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Erabo Pre-selector 1.2 (import)', 'Adobe Lightroom CC (import)', 'Photo Mechanic 6 (ingest)'],
+                datasets: [{
+                    label: 'RAW and CR2 Images loading speed in seconds',
+                    data: [0.23, 1.31, 0.89,],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
     <p class="work-post-content__paragraph">
         To a more in-depth view of the development challenges and how we accomplished this level of processing speed,
         please visit <a href="https://manuel.do/erabo-app-development-process/" class="bio-description__link" target="new">Manuel Güilamo's site</a>, who was the Lead Developer of this product.
@@ -166,5 +194,3 @@ active: work
         to <a href="https://pierinadiez.com/" class="bio-description__link" target="new">Pierina Díez</a>, who inspired this product and gave us invaluable feedback.</p>
     <a href="/" class="work-post-content__nav">Go Back to: Work</a>
 </div>
-<!-- <img data-src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2d61ef69452421.5b81da43ce35b.gif"
-    alt="Speed Test" class="work-post-content__image"> -->
