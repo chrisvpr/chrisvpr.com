@@ -15,7 +15,7 @@
     -o-transition: .6s;
     transition: .6s;
        @media screen and (max-width:$mobile){
-        margin-left: 1em;
+        margin-left: 0;
         }
       &:hover{
         -webkit-transform: scale(1.05);
@@ -24,7 +24,7 @@
         -webkit-transition: .6s;
         -o-transition: .6s;
         transition: .6s;
-        box-shadow: 0 0 8px rgba(33,33,33,.7);
+        box-shadow: 0 0 px rgba(33,33,33,.7);
       
       }
 
@@ -38,13 +38,11 @@
       -webkit-transition: .6s;
       -o-transition: .6s;
       transition: .6s;
-      
-      
-           @media screen and (max-width:$mobile){
-            --pad: 0.8em;
-            width: calc(270px - var(--pad));
-            height: calc(400px - var(--pad));
-            }
+      @media screen and (max-width:$mobile){
+      --pad: 0.8em;
+      width: calc(90vw - var(--pad));
+      height: calc(280px - var(--pad));
+      }
             
           &--case-01 {
             background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.73)), to(rgba(58, 58, 58, 0.73))),
