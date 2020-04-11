@@ -1,8 +1,6 @@
 .right-layout-container{
-    // margin-left: 25%;
     overflow: hidden;
     position: relative;
-    height: 100vh;
     @media screen and (max-width:$mobile){
             margin-left: 0;
         }     
@@ -10,7 +8,6 @@
 
 .bio{
     height: 100vh;
-    // margin-left: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

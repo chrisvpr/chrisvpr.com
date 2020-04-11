@@ -1,0 +1,45 @@
+.footer{
+    background-color: #f6f6f6;
+    margin-top: 60px;
+    padding: 40px 0;
+    padding-bottom: 30px;
+    .section-title{
+        margin: 0;
+    }
+    &__text{
+        text-align: center;
+    }
+    .intro__cta{
+        position: relative;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        left: 0;
+        width: 10em;
+    }
+    &__social{
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: var(--lgray);
+            &:not(:first-child){
+                margin-left: 20px;
+               
+            }
+        }
+        p{
+            margin-left: 20px;
+            color: var(--black);
+            font-size: 1.5rem;
+        }
+    }
+}
