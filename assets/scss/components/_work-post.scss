@@ -64,15 +64,14 @@
         -ms-flex-align: center;
             align-items: center;
     color: white;
-    padding-left: 20%;
     text-align: center;
 
-    &--normal{
+   
         padding-left: initial;
         -webkit-transition: all .5s;
         -o-transition: all .5s;
         transition: all .5s;   
-    } 
+    
 
      @media screen and (max-width:$mobile){
         padding-left: initial;
@@ -117,10 +116,9 @@
     -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
     padding: 1.5em 8em;
-    position: absolute;
+    position: relative;
     right: 0;
-    left: 20%;
-    top: 13em;
+    top: -3em;
     background-color: white;
     border-radius: 10px;
 
@@ -134,12 +132,12 @@
         left: 0;
     }
 
-    &--normal{
+  
         left: 0;
         -webkit-transition: all .5s;
         -o-transition: all .5s;
         transition: all .5s; 
-    }
+    
     
 
     &__first-letter {
