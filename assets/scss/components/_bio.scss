@@ -1,17 +1,18 @@
 .bio-description{
   &__quote{
-    color: gray;
     font-size: 2.8rem;
     font-weight: 100;
     font-weight: 700;
     max-width: 300px;
+    font-family: var(--serif);
+    margin-left: 20px;
     @media screen and (max-width:$desktop-sm){
       text-align: center;
     }   
   }
 
   &__text{
-    max-width: 470px;
+    max-width: 480px;
     border-left: solid var(--red);
     padding-left: 1em;
     padding-right: 1em;
@@ -30,6 +31,9 @@
 .bio-profile{
 
 position: relative;
+img{
+  border-radius: 20px;
+}
 
 &__name{
     color: var(--gray);
@@ -46,8 +50,8 @@ position: relative;
   height: 60px;
   border-radius: 50%;
   position: absolute;
-  right: 1em;
-  top: 11em;
+  right: -1em;
+  top: 10em;
   opacity: .7;
   -webkit-animation: reveal-ball 0.6s 0s;
           animation: reveal-ball 0.6s 0s;
