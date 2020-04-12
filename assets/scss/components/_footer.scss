@@ -28,6 +28,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        svg{
+            fill: red;
+            margin-right: 8px;
+        }
         a{
             color: var(--lgray);
             &:not(:first-child){
