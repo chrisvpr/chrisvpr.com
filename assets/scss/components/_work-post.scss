@@ -47,6 +47,18 @@
         background-position: 50% 50%;
     }
 
+    &--about{
+        background:-webkit-gradient(linear,left top, left bottom,from(rgba(58, 58, 58, 0.63)),to(rgba(58, 58, 58, 0.83))),
+        url("/assets/img/about.webp");
+        background:-webkit-linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
+        url("/assets/img/about.webp");
+        background:-o-linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
+        url("/assets/img/about.webp");
+        background:linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
+        url("/assets/images/about.webp");
+        background-position: 50% 40%;
+    }
+
     height: 20em;
     background-size: cover;
     background-repeat: no-repeat;
@@ -158,6 +170,9 @@
     &__paragraph{
         font-family: 'Rubik';
         font-weight: 400;
+        &.--sm{
+            font-size: 1rem;
+        }
     }
     &__caption{
         font-family: 'Rubik';
@@ -165,6 +180,10 @@
         font-style: italic;
         color: gray;
         font-size: .8rem;
+    }
+
+    &__link{
+        color: var(--red);
     }
 
     &__nav{

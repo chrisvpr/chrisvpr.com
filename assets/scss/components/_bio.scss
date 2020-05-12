@@ -1,9 +1,9 @@
 .bio-description{
   &__quote{
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     font-weight: 100;
     font-weight: 700;
-    max-width: 300px;
+    max-width: 800px;
     margin-left: 20px;
     line-height: 1.3;
     letter-spacing: 1px;
@@ -13,7 +13,7 @@
   }
 
   &__text{
-    max-width: 480px;
+    max-width: 800px;
     border-left: solid var(--red);
     padding-left: 1em;
     padding-right: 1em;

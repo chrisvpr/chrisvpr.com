@@ -58,13 +58,13 @@ active: work
 <script type="text/javascript">
 
   // List of sentences
-  var _CONTENT = [ "Hello, I am a UX Designer that wants to bridge the gap between bits and atoms.", "Seriously, I am just a nerd that's going to change your company through design." ];
+  var _CONTENT = [ "I am a UX Designer that wants to bridge the gap between bits and atoms.", "Seriously, I am just a nerd that likes to help people." ];
   
   // Current sentence being processed
   var _PART = 0;
   
   // Character number of the current sentence being processed 
-  var _PART_INDEX = 0;
+  var _PART_INDEX = _CONTENT[0].length;
   
   // Holds the handle returned from setInterval
   var _INTERVAL_VAL;
@@ -83,7 +83,7 @@ active: work
       clearInterval(_INTERVAL_VAL);
       setTimeout(function() {
         _INTERVAL_VAL = setInterval(Delete, 50);
-      }, 2000);
+      }, 3200);
     }
   }
   
