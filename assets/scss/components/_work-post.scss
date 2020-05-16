@@ -1,61 +1,31 @@
 .work-post-head{
 
     &--case-01{
-        background:-webkit-gradient(linear,left top, left bottom,from(rgba(58, 58, 58, 0.83)),to(rgba(58, 58, 58, 0.83))),
-        url("/assets/img/case-1.jpg");
-        background:-webkit-linear-gradient(rgba(58, 58, 58, 0.83),rgba(58, 58, 58, 0.83)),
-        url("/assets/img/case-1.jpg");
-        background:-o-linear-gradient(rgba(58, 58, 58, 0.83),rgba(58, 58, 58, 0.83)),
-        url("/assets/img/case-1.jpg");
         background:linear-gradient(rgba(58, 58, 58, 0.83),rgba(58, 58, 58, 0.83)),
         url("/assets/images/case-1.jpg");
         background-position: 50% 40%;
     }
 
     &--case-02{
-        background:-webkit-gradient(linear,left top, left bottom,from(rgba(58, 58, 58, 0.83)),to(rgba(58, 58, 58, 0.83))),
-        url("/assets/img/case-2.jpg");
-        background:-webkit-linear-gradient(rgba(58, 58, 58, 0.83),rgba(58, 58, 58, 0.83)),
-        url("/assets/img/case-2.jpg");
-        background:-o-linear-gradient(rgba(58, 58, 58, 0.83),rgba(58, 58, 58, 0.83)),
-        url("/assets/img/case-2.jpg");
         background:linear-gradient(rgba(58, 58, 58, 0.83),rgba(58, 58, 58, 0.83)),
         url("/assets/images/case-2.jpg");
         background-position: 80% 70%;
     }
     &--case-03{
-        background:-webkit-gradient(linear,left top, left bottom,from(rgba(58, 58, 58, 0.63)),to(rgba(58, 58, 58, 0.83))),
-        url("/assets/img/case-3.png");
-        background:-webkit-linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
-        url("/assets/img/case-3.png");
-        background:-o-linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
-        url("/assets/img/case-3.png");
         background:linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
         url("/assets/images/case-3.png");
         background-position: 80% 70%;
     }
 
     &--case-04{
-        background:-webkit-gradient(linear,left top, left bottom,from(rgba(58, 58, 58, 0.63)),to(rgba(58, 58, 58, 0.83))),
-        url("/assets/img/case-4/case-4.jpg");
-        background:-webkit-linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
-        url("/assets/img/case-4/case-4.jpg");
-        background:-o-linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
-        url("/assets/img/case-4/case-4.jpg");
         background:linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
         url("/assets/images/case-4/case-4.jpg");
         background-position: 50% 50%;
     }
 
     &--about{
-        // background:-webkit-gradient(linear,left top, left bottom,from(rgba(58, 58, 58, 0.63)),to(rgba(58, 58, 58, 0.83))),
-        // url("/assets/img/about.webp");
-        // background:-webkit-linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
-        // url("/assets/img/about.webp");
-        // background:-o-linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
-        // url("/assets/img/about.webp");
         background:linear-gradient(rgba(58, 58, 58, 0.63),rgba(58, 58, 58, 0.63)),
-        url("/assets/images/guitar-chris.JPG");
+        url("/assets/images/guitar-chris.jpg");
         background-position: 50% 50%;
     }
 
