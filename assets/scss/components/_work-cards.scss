@@ -8,187 +8,62 @@
   margin-bottom: 60px;
 }
 
-.work-card {
-    color: white;
-    margin-left: 2em;
-    margin-bottom: 2em;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
-       @media screen and (max-width:$mobile){
-        margin-left: 0;
-        }
-      &:hover{
-        -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-                transform: scale(1.05);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s;
-        box-shadow: 0 0 px rgba(33,33,33,.7);
-      
-      }
-
-  &__background {
-      --pad: 0.8em;
-      width: calc(280px - var(--pad));
-      height: calc(320px - var(--pad));
-      border-radius: 7px;
-      padding: var(--pad);
-      position: relative;
-      -webkit-transition: .6s;
-      -o-transition: .6s;
-      transition: .6s;
-      @media screen and (max-width:$mobile){
-      --pad: 0.8em;
-      width: calc(90vw - var(--pad));
-      height: calc(280px - var(--pad));
-      }
-            
-          &--case-01 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.73)), to(rgba(58, 58, 58, 0.73))),
-            url("/assets/images/case-1.jpg");
-            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/case-1.jpg");
-            background: -o-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/case-1.jpg");
-            background: linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/case-1.jpg");
-            background-position: 32% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-
-          &--case-02 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.73)), to(rgba(58, 58, 58, 0.73))),
-            url("/assets/images/case-2.jpg");
-            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/case-2.jpg");
-            background: -o-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/case-2.jpg");
-            background: linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/case-2.jpg");
-            background-position: 32% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-          &--case-03 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.33)), to(rgba(58, 58, 58, 0.73))),
-            url("/assets/images/case-3.png");
-            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
-            url("/assets/images/case-3.png");
-            background: -o-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
-            url("/assets/images/case-3.png");
-            background: linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.33)),
-            url("/assets/images/case-3.png");
-            background-position: 62% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-          &--case-04 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.43)), to(rgba(58, 58, 58, 0.73))),
-            url("/assets/images/case-4/case-4.jpg");
-            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/case-4/case-4.jpg");
-            background: -o-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/case-4/case-4.jpg");
-            background: linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/case-4/case-4.jpg");
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-
-          &--workshop-01 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.73)), to(rgba(58, 58, 58, 0.73))),
-            url("/assets/images/workshop-1.jpg");
-            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/workshop-1.jpg");
-            background: -o-linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/workshop-1.jpg");
-            background: linear-gradient(rgba(58, 58, 58, 0.73), rgba(58, 58, 58, 0.73)),
-            url("/assets/images/workshop-1.jpg");
-            background-position: 50% 60%;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-
-          &--workshop-02 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.43)), to(rgba(58, 58, 58, 0.43))),
-            url("/assets/images/workshop-2--.jpg");
-            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-2--.jpg");
-            background: -o-linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-2--.jpg");
-            background: linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-2--.jpg");
-            background-position: 50% 60%;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-          &--workshop-03 {
-            background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 58, 58, 0.43)), to(rgba(58, 58, 58, 0.43))),
-            url("/assets/images/workshop-new.jpg");
-            background: -webkit-linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-new.jpg");
-            background: -o-linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-new.jpg");
-            background: linear-gradient(rgba(58, 58, 58, 0.63), rgba(58, 58, 58, 0.43)),
-            url("/assets/images/workshop-new.jpg");
-            background-position: 70% 60%;
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-      }
-      &__title {
-        position: relative;
-        font-weight: 100;
-        font-size: 1.4rem;
-        max-width: 300px;
-        margin: 0;
-        margin-top: 10px;
-        font-size: 1.4rem;
-        letter-spacing: .1em;
-
-        &::after {
-          content: "";
-          display: block;
-          height: 4px;
-          width: 15%;
-          background-color: var(--red);
-          position: absolute;
-          margin-top: 0.5em;  
-        }
-      }
-      &__sub-title {
-        right: 2em;
-        bottom: 0.5em;
-        letter-spacing: 1px;
-        font-weight: 400;
-        margin-top: 2em;
-        font-size: 1rem;
-        margin-bottom: 0;
-        max-width: 80%;
-        font-size: 0.9rem;
-      }
-      &__cta {
-        position: absolute;
-        right: 2em;
-        bottom: 0.5em;
-        letter-spacing: 1.68px;
-        font-weight: 100;
-        background-color: var(--red);
-        padding: 10px;
-        font-size: 10px;
-        border-radius: 5px;
-        display: none;
-      }
-      &__date {
-        position: absolute;
-        left: 1em;
-        bottom: 0.2em;
-        letter-spacing: 1px;
-        font-weight: 100;
-      }
-  } 
-
+.work-card{
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  border-radius: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.1);
+  transition: .6s;
+  margin-bottom: 37px;
+  &:hover{
+            transform: scale(1.05);
+            transition: .6s;
+            box-shadow: 0 0 px rgba(33,33,33,.7);
+  }
+  @media screen and(max-width:$mobile){
+    grid-template-columns:1fr;
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px 0 0 10px;
+    @media screen and(max-width:$mobile){
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 37px;
+  }
+  &__title{
+    font-family: Proza Libre;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: -0.04em;
+    color: #000000;
+    margin: 18.5px 0;
+    @media screen and(max-width:$mobile){
+      font-size: 1.5rem;
+      margin: 13.8px 0;
+      margin-top: 35px;
+    }
+  }
+  &__description{
+  font-size: 1.1rem;
+  letter-spacing: -0.04em;
+  color: var(--lgray);
+  }
+  &__cta{
+    margin-top: 37px;
+    font-weight: bold;
+    font-size: 1rem;
+    @media screen and(max-width:$mobile){
+      margin-bottom: 37px;
+      margin-top: 18px;
+      text-align: center;
+    }
+  }
+}
