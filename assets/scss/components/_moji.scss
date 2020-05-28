@@ -1,0 +1,9 @@
+.moji{
+    display: none;
+        span{
+            color: var(--red);
+        }
+        &.--show{
+            display: initial;
+        }
+}

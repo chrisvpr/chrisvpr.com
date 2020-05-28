@@ -9,8 +9,12 @@ active: work
     <img data-src="/assets/images/Logo-w.svg" alt="" class="main-logo--sm">
   </figure>
   <div class="intro" id="container">
-    <h1 class="intro__quote" id="text"> Hello, I am 🤓 🚴‍♂️ 🎮 🧘🏻‍♂️ 🏖️  🎸🍔<br> humans call me Chris </h1>
-    <!-- <div id="cursor"></div> -->
+    <h1 class="intro__quote" id="text">      
+      <span class="moji cs--73">Hi <span>Manuel </span> 🔨<br></span>
+      <span class="moji cs--66">Hi <span>Spooner </span> 🥄<br></span>
+       I am <span>🤓 🚴‍♂️ 🎮 🧘🏻‍♂️  🎸🍔</span><br> 
+      <span> humans call me Chris</span> 
+    </h1>
     
   </div>
   
@@ -46,64 +50,3 @@ active: work
       </div>
     </a>
 </main>
-
-<!-- <script type="text/javascript">
-
-  // List of sentences
-  var _CONTENT = [ "I am a Designer that wants to bridge the gap between bits and atoms.", "Seriously, I am just a nerd that likes to help people." ];
-  
-  // Current sentence being processed
-  var _PART = 0;
-  
-  // Character number of the current sentence being processed 
-  var _PART_INDEX = _CONTENT[0].length;
-  
-  // Holds the handle returned from setInterval
-  var _INTERVAL_VAL;
-  
-  // Element that holds the text
-  var _ELEMENT = document.querySelector("#text");
-  
-  // Implements typing effect
-  function Type() { 
-    var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-    _ELEMENT.innerHTML = text;
-    _PART_INDEX++;
-  
-    // If full sentence has been displayed then start to delete the sentence after some time
-    if(text === _CONTENT[_PART]) {
-      clearInterval(_INTERVAL_VAL);
-      setTimeout(function() {
-        _INTERVAL_VAL = setInterval(Delete, 50);
-      }, 3200);
-    }
-  }
-  
-  // Implements deleting effect
-  function Delete() {
-    var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
-    _ELEMENT.innerHTML = text;
-    _PART_INDEX--;
-  
-    // If sentence has been deleted then start to display the next sentence
-    if(text === '') {
-      clearInterval(_INTERVAL_VAL);
-  
-      // If last sentence then display the first one, else move to the next
-      if(_PART == (_CONTENT.length - 1))
-        _PART = 0;
-      else
-        _PART++;
-      _PART_INDEX = 0;
-  
-      // Start to display the next sentence after some time
-      setTimeout(function() {
-        _INTERVAL_VAL = setInterval(Type, 100);
-      }, 200);
-    }
-  }
-  
-  // Start the typing effect on load
-  _INTERVAL_VAL = setInterval(Type, 100);
-  
-  </script> -->
