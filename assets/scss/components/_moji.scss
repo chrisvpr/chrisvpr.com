@@ -1,10 +1,4 @@
-.moji{
-    display: none;
-        span{
-            color: var(--red);
-        }
-        &.--show{
-            display: initial;
-        } 
+.moji-comp{
+    color: var(--red);
 }
 
