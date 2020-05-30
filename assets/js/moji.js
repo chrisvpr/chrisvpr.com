@@ -15,3 +15,11 @@ if (window.location.href.indexOf("?ref=114") > -1) {
         document.getElementById("moji-name").innerHTML +=  
                 "Hello <span class='moji-comp'> Humble Hungry Hunter</span>."; 
 }
+
+if (window.location.href.indexOf("?ref=640") > -1) {
+        document.documentElement.style.setProperty('--red', '#695EE8');
+        document.getElementById("moji-name").innerHTML +=  
+        "Let's build<span class='moji-comp'> the future of HR </span> 👨‍🎨.";  
+}
+
+
