@@ -22,4 +22,9 @@ if (window.location.href.indexOf("?ref=640") > -1) {
         "Let's build<span class='moji-comp'> the future of HR </span> 👨‍🎨.";  
 }
 
+if (window.location.href.indexOf("?ref=454") > -1) {
+        document.documentElement.style.setProperty('--red', '#2abb9b');
+        document.getElementById("moji-name").innerHTML +=  
+        "Let's <span class='moji-comp'> Lead the Way </span>  together 🛵.";  
+}
 
