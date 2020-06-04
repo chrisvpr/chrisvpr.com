@@ -1,9 +1,3 @@
-if (window.location.href.indexOf("?ref=37") > -1) {
-        document.documentElement.style.setProperty('--red', '#40df6d');
-        document.getElementById("moji-name").innerHTML +=  
-                "Let's design<span class='moji-comp'> the future <br>of transportation </span> 🚗.";         
-}
-
 if (window.location.href.indexOf("?ref=12") > -1) {
         document.documentElement.style.setProperty('--red', '#00c4cc');
         document.getElementById("moji-name").innerHTML +=  
@@ -28,3 +22,20 @@ if (window.location.href.indexOf("?ref=454") > -1) {
         "Let's <span class='moji-comp'> Lead the Way </span>  together 🛵.";  
 }
 
+if (window.location.href.indexOf("?ref=210") > -1) {
+        document.documentElement.style.setProperty('--red', '#0070ba');
+        document.getElementById("moji-name").innerHTML +=  
+        "Let's <span class='moji-comp'> reimagine money </span>  together .";  
+}
+
+if (window.location.href.indexOf("?work1") > -1) {
+        document.documentElement.style.setProperty('--red', '#48c0ca');
+        document.getElementById("moji-name").innerHTML +=  
+        "Let's <span class='moji-comp'> Lead the future<br> of payments </span>  together .";  
+}
+
+if (window.location.href.indexOf("?work-portfolio") > -1) {
+        document.documentElement.style.setProperty('--red', '#007bff');
+        document.getElementById("moji-name").innerHTML +=  
+        "Let's <span class='moji-comp'> think out of the bank </span>";  
+}
