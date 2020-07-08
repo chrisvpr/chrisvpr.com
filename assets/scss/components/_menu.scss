@@ -181,6 +181,65 @@
         display: none;
       }
     }
+    &:hover{
+      .menu__logo__name{
+        animation-name: boucing-name;
+        animation-duration: 0.3s;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+      }
+      .menu__logo__ball{
+        animation-name: boucing-ball;
+        animation-duration: 0.3s;
+      }
+      @keyframes boucing-ball {
+        0%{ left: -28px;}
+        50%{ left: -30px;}
+        60%{ left: -28px;}
+        70%{ left: -26px;}
+        80%{ left: -24px;}
+        90%{ left: -22px;}
+        100%{ left: -20px;}
+      }
+      @keyframes boucing-name {
+        from{ opacity: 0; margin-left: 0px;}
+        to{ opacity: 1; margin-left: 8px;}
+      }
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &__ball{
+      display: block;
+        width: 18px;
+        height: 18px;
+        background: linear-gradient(180deg, #C01844 0%, #A5163B 100%);
+        border-radius: 50%;
+        position: absolute;
+        left: -28px;
+    }
+    &__line{
+      display: block;
+        width: 2.5px;
+        height: 45px;
+        background-color: black;
+    }
+    &__name{
+      color: black;
+      font-size: 22px;
+      letter-spacing: 1px;
+      opacity: 0;
+      transition: 0.3s;
+      margin-left: 0;
+      animation-name: boucing-name-back;
+      animation-duration: 0.3s;
+      @keyframes boucing-name-back {
+        from{ opacity: 1; margin-left: 8px;}
+        to{ opacity: 0; margin-left: 0;}
+      
+      }
+    }
   }
 } //End of Menu
 
