@@ -23,3 +23,9 @@ $self: &;
 
 $desktop-sm: 800px;
 $mobile: 700px;
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
